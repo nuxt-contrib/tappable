@@ -7,7 +7,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest && codecov"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",
@@ -33,6 +37,7 @@
     "tapable": "^0.2.6"
   },
   "devDependencies": {
+    "codecov": "^2.2.0",
     "jest": "^20.0.4"
   }
 }

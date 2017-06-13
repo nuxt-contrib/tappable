@@ -1,6 +1,7 @@
 const _Tapable = require('tapable')
 const Tapable = require('../lib')
 
+// Using extends
 class A extends Tapable {
   constructor () {
     super()
@@ -15,12 +16,22 @@ class A extends Tapable {
   }
 }
 
+// Using mixin
+function B() {
+  Tapable.call(this);
+}
+Tapable.mixin(B.prototype);
 
-test('tapable class', () => {
+test('extends', () => {
   let a = new A()
   expect(a).toBeInstanceOf(Tapable)
-  // It should extend original Tapable
   expect(a).toBeInstanceOf(_Tapable)
+})
+
+test('mixin', async () => {
+  let b = new B()
+  expect(b).toBeInstanceOf(Tapable)
+  expect(b).toBeInstanceOf(_Tapable)
 })
 
 test('applyPlugins* returns promise', () => {

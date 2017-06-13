@@ -28,10 +28,8 @@ test('extends', () => {
   expect(a).toBeInstanceOf(_Tapable)
 })
 
-test('mixin', async () => {
-  let b = new B()
-  expect(b).toBeInstanceOf(Tapable)
-  expect(b).toBeInstanceOf(_Tapable)
+test('mixin', () => {
+  expect(B.prototype).toMatchObject(Tapable.prototype)
 })
 
 test('applyPlugins* returns promise', () => {

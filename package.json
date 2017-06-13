@@ -1,13 +1,13 @@
 {
   "name": "tapable-promise",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tapable with Promise support",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

@@ -5,15 +5,13 @@
 [![npm](https://img.shields.io/npm/v/tapable-promise.svg?style=flat-square)](https://www.npmjs.com/package/codemeli)
 
 ## Setup
-Get package
 ```bash
 yarn add tapable-promise 
 # or
 npm install --save tapable-promise
 ```
-
-Require it
 ```js
+// Require module
 const Tapable = require('tapable-promise')
 ```
 
@@ -25,8 +23,6 @@ This functions are wrapped with [pify](https://www.npmjs.com/package/pify)
 and return promise too.
 
 ```js
-const tapable = require('Tapa')
-
 // Using async/await
 await this.applyPluginsAsync('init')
 
@@ -40,8 +36,8 @@ this.applyPluginsAsync('init')
 })
 ```
 
-### `apply(names, callback)`
-Adds returning promise support to `callback` function so that plugins can apply async functions.
+### `plugin(names, handler)`
+When register plugins `handler` function can also return promise instead of calling `callback` argument.
 
 ```js
 webpack.plugin('init', async () => {
@@ -50,7 +46,7 @@ webpack.plugin('init', async () => {
 
 // or
 webpack.plugin('init', () => new Promise((resolve, reject) => {
-  // ...
+  // Call resolve() or rejcet() when finished or chain promise
 }))
 ```
 

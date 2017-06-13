@@ -1,0 +1,38 @@
+{
+  "name": "tapable-promise",
+  "version": "0.1.0",
+  "description": "Tapable with Promise support",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pi0/tapable-promise.git"
+  },
+  "keywords": [
+    "tapable",
+    "promise",
+    "async",
+    "await",
+    "webpack",
+    "q",
+    "co"
+  ],
+  "author": "Pooya Parsa <pooya@pi0.ir>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pi0/tapable-promise/issues"
+  },
+  "homepage": "https://github.com/pi0/tapable-promise#readme",
+  "dependencies": {
+    "pify": "^3.0.0",
+    "tapable": "^0.2.6"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}

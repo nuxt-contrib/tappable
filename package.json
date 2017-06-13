@@ -1,5 +1,5 @@
 {
-  "name": "tapable-promise",
+  "name": "tappable",
   "version": "1.0.1",
   "description": "Tapable with Promise support",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pi0/tapable-promise.git"
+    "url": "git+https://github.com/pi0/tappable.git"
   },
   "keywords": [
     "tapable",
@@ -29,9 +29,9 @@
   "author": "Pooya Parsa <pooya@pi0.ir>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pi0/tapable-promise/issues"
+    "url": "https://github.com/pi0/tappable/issues"
   },
-  "homepage": "https://github.com/pi0/tapable-promise#readme",
+  "homepage": "https://github.com/pi0/tappable#readme",
   "dependencies": {
     "pify": "^3.0.0",
     "tapable": "^0.2.6"

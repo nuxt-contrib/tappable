@@ -6,6 +6,10 @@ class A extends Tapable {
     super()
   }
 
+  test () {
+    return this.applyPlugins('banana', 'testArgument')
+  }
+
   asyncTest () {
     return this.applyPluginsAsync('banana', 'testArgument')
   }
@@ -70,4 +74,14 @@ test('plugin without callback', async () => {
   })
   await a.asyncTest()
   expect(resolved).toBe(true)
+})
+
+test('no async', async () => {
+  let a = new A()
+  let resolved = false
+  a.plugin('banana', () => {
+    resolved = true
+  })
+  let result = a.test()
+  expect(result).toBeUndefined()
 })

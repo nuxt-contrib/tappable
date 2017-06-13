@@ -1,8 +1,9 @@
+[![CircleCI](https://img.shields.io/circleci/project/github/pi0/tapable-promise.svg?style=flat-square)](https://circleci.com/gh/pi0/tapable-promise)
+[![Codecov](https://img.shields.io/codecov/c/github/pi0/tapable-promise.svg?style=flat-square)](https://codecov.io/gh/pi0/tapable-promise)
+[![npm](https://img.shields.io/npm/v/tapable-promise.svg?style=flat-square)](https://www.npmjs.com/package/codemeli)
+
 # tapable-promise
 > Extends [tapable](https://www.npmjs.com/package/tapable) with promise support.
-
-[![CircleCI](https://img.shields.io/circleci/project/github/pi0/tapable-promise.svg?style=flat-square)](https://circleci.com/gh/pi0/tapable-promise)
-[![npm](https://img.shields.io/npm/v/tapable-promise.svg?style=flat-square)](https://www.npmjs.com/package/codemeli)
 
 ## Setup
 ```bash

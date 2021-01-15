@@ -5,6 +5,8 @@
 # Tappable
 > [Tapable](https://www.npmjs.com/package/tapable) with promise support.
 
+### 🛑 Deprecated: please use [hookable](https://github.com/nuxt-contrib/hookable)
+
 ## Setup
 ```bash
 yarn add tappable
